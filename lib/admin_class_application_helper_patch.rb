@@ -1,3 +1,4 @@
+require_dependency 'application_helper'
 module AdminClass
   module ApplicationHelperPatch
     def self.included(base)
