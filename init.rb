@@ -1,10 +1,6 @@
 require 'admin_class_application_helper_patch'
 
-Rails.configuration.to_prepare do
-  unless ApplicationHelper.included_modules.include? AdminClass::ApplicationHelperPatch
-    ApplicationHelper.send(:include, AdminClass::ApplicationHelperPatch)
-  end
-end
+ApplicationHelper.prepend(AdminClass::ApplicationHelperWithAdminClass)
 
 Redmine::Plugin.register :redmine_admin_class do
   name 'Redmine Admin Class plugin'
