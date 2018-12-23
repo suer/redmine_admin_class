@@ -18,7 +18,7 @@ Then, restart your redmine.
 
 Requirements
 ------------------------------
-* Redmine 2.4 or later
+* Redmine 4.0 or later
 
 License
 ------------------------------
